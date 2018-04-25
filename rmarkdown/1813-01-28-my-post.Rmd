@@ -1,0 +1,84 @@
+---
+title: Pride and Prejudice
+author: Jane Austen
+date: '1813-01-28'
+tags:
+  - pride
+  - prejudice
+slug: my-post
+output:  
+  html_document:
+    theme: null
+    self_contained: false
+    template: ../style/rladiessydneyblog.html5  
+    css: 
+      - ../style/style.css  
+      - ../style/fonts.css        
+---
+
+# Chapter 1
+
+It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife.
+
+However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters.
+
+Etc.
+
+# A heading
+## A sub-heading
+### A sub-sub-heading
+
+- This is an unordered list
+- *This list item is italicised*
+- **This one is boldface**
+- `This text is verbatim`
+
+1. An ordered list
+2. with two items
+
+Sometimes it is nice to show the results of an R expression like `weekdays(as.Date("1813-01-28"))` inline. That way we find out that *Pride and Prejudice* was published on a `r weekdays(as.Date("1813-01-28"))`. Code blocks look like this:
+
+```{r name-of-the-chunk}
+PPdate <- as.Date("1813-01-28")
+PPday <- weekdays(PPdate)
+print(PPday)
+```
+
+A link to a [RMarkdown cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+
+A static image to include with the post
+
+![](../1813-01-28-my-post_staticfiles/logo.png)
+
+An R chunk that does some basic image manipulation and plotting using the [imager](https://dahtah.github.io/imager/imager.html) package:
+
+
+```{r a-picture, fig.width=4, fig.height=4, fig.align='center'}
+# load packages
+library(imager, quietly = TRUE, warn.conflicts = FALSE)
+library(magrittr)
+
+# specify the file path
+rladieslogo <- "../1813-01-28-my-post_staticfiles/logo.png"
+
+# specify a mapping function
+map <- function(x,y) {
+  list(
+    x=exp(y/1000)*x,
+    y=y*exp(-sin(x/60))
+  )
+} 
+
+# load, warp & plot the logo
+rladieslogo %>% load.image %>% imwarp(map=map) %>% plot(axes=FALSE)
+```
+
+
+You can write LaTeX equations inline, like this $(x-\mu)^2$, but larger ones probably look nicer this way:
+$$
+\frac{1}{\sigma\sqrt{2\pi}} \exp \left( -\frac{(x-\mu)^2}{2\sigma^2} \right)
+$$
+
+
+
+

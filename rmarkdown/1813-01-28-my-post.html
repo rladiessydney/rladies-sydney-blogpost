@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Jane Austen" />
+  <meta name="dcterms.date" content="1813-01-28" />
+  <title>Pride and Prejudice</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/fonts.css">
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<div class="article-meta">
+<h1><span class="title">Pride and Prejudice</span></h1>
+<h2 class="author">Jane Austen</h2>
+<p>
+Posted: 1813-01-28
+Tags:
+pride
+prejudice
+</p>
+</div>
+</header>
+<div id="chapter-1" class="section level1">
+<h1>Chapter 1</h1>
+<p>It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife.</p>
+<p>However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters.</p>
+<p>Etc.</p>
+</div>
+<div id="a-heading" class="section level1">
+<h1>A heading</h1>
+<div id="a-sub-heading" class="section level2">
+<h2>A sub-heading</h2>
+<div id="a-sub-sub-heading" class="section level3">
+<h3>A sub-sub-heading</h3>
+<ul>
+<li>This is an unordered list</li>
+<li><em>This list item is italicised</em></li>
+<li><strong>This one is boldface</strong></li>
+<li><code>This text is verbatim</code></li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>An ordered list</li>
+<li>with two items</li>
+</ol>
+<p>Sometimes it is nice to show the results of an R expression like <code>weekdays(as.Date(&quot;1813-01-28&quot;))</code> inline. That way we find out that <em>Pride and Prejudice</em> was published on a Thursday. Code blocks look like this:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">PPdate &lt;-<span class="st"> </span><span class="kw">as.Date</span>(<span class="st">&quot;1813-01-28&quot;</span>)
+PPday &lt;-<span class="st"> </span><span class="kw">weekdays</span>(PPdate)
+<span class="kw">print</span>(PPday)</code></pre></div>
+<pre><code>## [1] &quot;Thursday&quot;</code></pre>
+<p>A link to a <a href="https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf">RMarkdown cheatsheet</a></p>
+<p>A static image to include with the post</p>
+<div class="figure">
+<img src="../1813-01-28-my-post_staticfiles/logo.png" />
+
+</div>
+<p>An R chunk that does some basic image manipulation and plotting using the <a href="https://dahtah.github.io/imager/imager.html">imager</a> package:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># load packages</span>
+<span class="kw">library</span>(imager, <span class="dt">quietly =</span> <span class="ot">TRUE</span>, <span class="dt">warn.conflicts =</span> <span class="ot">FALSE</span>)
+<span class="kw">library</span>(magrittr)
+
+<span class="co"># specify the file path</span>
+rladieslogo &lt;-<span class="st"> &quot;../1813-01-28-my-post_staticfiles/logo.png&quot;</span>
+
+<span class="co"># specify a mapping function</span>
+map &lt;-<span class="st"> </span><span class="cf">function</span>(x,y) {
+  <span class="kw">list</span>(
+    <span class="dt">x=</span><span class="kw">exp</span>(y<span class="op">/</span><span class="dv">1000</span>)<span class="op">*</span>x,
+    <span class="dt">y=</span>y<span class="op">*</span><span class="kw">exp</span>(<span class="op">-</span><span class="kw">sin</span>(x<span class="op">/</span><span class="dv">60</span>))
+  )
+} 
+
+<span class="co"># load, warp &amp; plot the logo</span>
+rladieslogo <span class="op">%&gt;%</span><span class="st"> </span>load.image <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">imwarp</span>(<span class="dt">map=</span>map) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">plot</span>(<span class="dt">axes=</span><span class="ot">FALSE</span>)</code></pre></div>
+<p><img src="1813-01-28-my-post_files/figure-html/a-picture-1.png" width="384" style="display: block; margin: auto;" /></p>
+<p>You can write LaTeX equations inline, like this <span class="math inline">\((x-\mu)^2\)</span>, but larger ones probably look nicer this way: <span class="math display">\[
+\frac{1}{\sigma\sqrt{2\pi}} \exp \left( -\frac{(x-\mu)^2}{2\sigma^2} \right)
+\]</span></p>
+</div>
+</div>
+</div>
+</body>
+</html>
